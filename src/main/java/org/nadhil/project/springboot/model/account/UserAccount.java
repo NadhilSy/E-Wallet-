@@ -25,7 +25,7 @@ public class UserAccount {
     private String lastName;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "usercredential_id")
+    @JoinColumn(name = "email")
     private UserCredential userCredential;
 
 }

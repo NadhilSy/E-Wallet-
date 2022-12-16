@@ -12,12 +12,13 @@ import javax.persistence.*;
 @Table(name = "user_credential")
 public class UserCredential {
 
+//    @Id
+//    @GeneratedValue(generator = "system-uuid")
+//    @GenericGenerator(name = "system-uuid", strategy = "uuid2")
+//    private String id;
+
+
     @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-    private String id;
-
-
     @Column(name = "email", nullable = false, length = 100, unique = true)
     private String email;
 

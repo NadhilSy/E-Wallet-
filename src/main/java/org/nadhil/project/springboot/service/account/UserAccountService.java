@@ -27,8 +27,8 @@ public class UserAccountService implements IUserAccountService{
     public UserAccount registerAccount(UserAccount userAccount, UserCredential userCredential) {
         try {
             UserCredential newUserCred = userCredentialService.registerCredential(userCredential);
-            System.out.println(newUserCred.getId());
-            UserCredential credentialId = userCredentialService.getId(newUserCred.getId());
+            System.out.println(newUserCred.getEmail());
+            UserCredential credentialId = userCredentialService.getId(newUserCred.getEmail());
             userAccount.setUserCredential(credentialId);
             return userAccountRepository.save(userAccount);
         } catch (DataIntegrityViolationException e){

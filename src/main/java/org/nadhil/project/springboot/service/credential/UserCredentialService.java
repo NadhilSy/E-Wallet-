@@ -42,7 +42,13 @@ public class UserCredentialService implements IUserCredentialService {
     public UserCredential getBy(UserCredential context) {
         Optional<UserCredential> credential = userCredentialRepository.findById(context.getEmail());
         if (credential.isEmpty()){
-
+            throw new NotFoundException("not found");
+        }
+        if (!context.getEmail().equals(credential.get().getEmail())){
+            throw new NotFoundException("not same");
+        }
+        if (!context.getPassword().equals(credential.get().getPassword())){
+            throw new NotFoundException("not same");
         }
         return credential.get();
     }
