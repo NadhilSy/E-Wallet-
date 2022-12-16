@@ -13,4 +13,5 @@ public class UserAccountCredRequest {
     private String balance;
 
     private String debit;
+    private Long userBalance;
 }

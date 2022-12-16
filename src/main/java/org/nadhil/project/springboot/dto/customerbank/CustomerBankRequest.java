@@ -7,4 +7,6 @@ public class CustomerBankRequest {
     private String debitId;
 
     private String pin;
+
+    private Long balance;
 }

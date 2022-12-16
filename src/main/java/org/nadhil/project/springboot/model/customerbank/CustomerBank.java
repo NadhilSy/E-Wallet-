@@ -19,4 +19,8 @@ public class CustomerBank {
     @Column(name = "pin", nullable = false, length = 10)
     private String pin;
 
+    @Column(name = "balance", nullable = false)
+    private Long balance;
+
+
 }

@@ -1,8 +1,6 @@
 package org.nadhil.project.springboot.model.account;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.nadhil.project.springboot.model.credential.UserCredential;
 
@@ -28,8 +26,16 @@ public class UserAccount {
     @JoinColumn(name = "email", unique = true)
     private UserCredential userCredential;
 
-    @Column(name = "debit_id", nullable = true, length = 20)
-    private String debitId;
-    @Column(name = "balance", nullable = true)
-    private Long balance;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "balance_id")
+    private UserBalance balanceId;
+
+
+
+
+
+//    @Column(name = "debit_id", nullable = true, length = 20)
+//    private String debitId;
+//    @Column(name = "balance", nullable = true)
+//    private Long balance;
 }
