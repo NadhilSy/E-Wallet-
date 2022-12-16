@@ -4,14 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f6285e7-9a3c-4de6-8f14-a8a80cc69fcc" name="Changes" comment="first commit, create account feature">
+    <list default="true" id="3f6285e7-9a3c-4de6-8f14-a8a80cc69fcc" name="Changes" comment="second commit - 2, refactor UserCredential id, remove id uuid and make email as @id + add login feature">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/customerbank/CustomerBankController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountBalanceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountDebitRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/customerbank/CustomerBankRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/customerbank/CustomerBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/customerbank/ICustomerBankRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/customerbank/CustomerBankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/customerbank/ICustomerBankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/utils/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/credential/UserCredentialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/credential/UserCredentialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/account/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/account/UserAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountCredRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountCredRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/credential/UserCredentialRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/credential/UserCredentialRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/credential/UserCredential.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/credential/UserCredential.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/credential/IUserCredentialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/credential/IUserCredentialRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserAccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserAccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/credential/UserCredentialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/credential/UserCredentialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,6 +68,12 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nadhil.project.springboot.exception" />
+      <recent name="org.nadhil.project.springboot.utils" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="environment1" type="Application" factoryName="Application">
       <envs>
@@ -85,11 +107,20 @@
       <option name="project" value="LOCAL" />
       <updated>1671162162237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit, refactor UserCredential id, remove id uuid and make email as @id">
+      <created>1671164588438</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671164588438</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit, create account feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit, create account feature" />
+    <MESSAGE value="second commit, refactor UserCredential id, remove id uuid and make email as @id" />
+    <MESSAGE value="second commit - 2, refactor UserCredential id, remove id uuid and make email as @id + add login feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit - 2, refactor UserCredential id, remove id uuid and make email as @id + add login feature" />
   </component>
 </project>

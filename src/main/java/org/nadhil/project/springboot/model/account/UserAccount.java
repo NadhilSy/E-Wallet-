@@ -25,7 +25,11 @@ public class UserAccount {
     private String lastName;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "email")
+    @JoinColumn(name = "email", unique = true)
     private UserCredential userCredential;
 
+    @Column(name = "debit_id", nullable = true, length = 20)
+    private String debitId;
+    @Column(name = "balance", nullable = true)
+    private Long balance;
 }

@@ -1,5 +1,6 @@
 package org.nadhil.project.springboot.model.credential;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
@@ -7,7 +8,7 @@ import org.nadhil.project.springboot.model.account.UserAccount;
 
 import javax.persistence.*;
 
-@Getter @Setter
+@Data
 @Entity
 @Table(name = "user_credential")
 public class UserCredential {
