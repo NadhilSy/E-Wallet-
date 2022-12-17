@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6285e7-9a3c-4de6-8f14-a8a80cc69fcc" name="Changes" comment="third commit, add CustomerBank entity with getlist and create feature">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/transaction/UserTransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserTransactionRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserBalanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserBalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserTransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserBalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserTransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/account/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/controller/account/UserAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountCredRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountCredRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/account/UserAccountDebitRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/customerbank/CustomerBankRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/dto/customerbank/CustomerBankRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/account/UserTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/customerbank/CustomerBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/model/customerbank/CustomerBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/repository/account/IUserAccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/IUserAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nadhil/project/springboot/service/account/UserAccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
